@@ -1,0 +1,249 @@
+@import "./styleguide.css";
+
+.box {
+  padding: 72px;
+  display: flex;
+  flex-direction: column;
+  width: 1776px;
+  /* align-items: flex-start; */
+  gap: 32px;
+}
+.header {
+  display: grid;
+  grid-template-columns: 88px 1fr 88px;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.header-text {
+  text-align: center;
+  font-family: var(--second-font);
+  color: var(--common-black);
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  width: 1584px;
+  /* margin-bottom: 8px; */
+}
+.content-text {
+  text-align: center;
+  font-family: var(--common-font);
+  color: var(--common-black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.logo {
+  display: block;
+  width: 88px;
+  height: 88px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1584px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding-left: 10px;
+}
+
+h1 {
+  font-family: var(--common-font);
+  color: var(--common-black);
+  text-align: center;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1, 05;
+}
+
+h3 {
+  font-family: var(--common-font);
+  color: var(--common-black);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-family: var(--common-font);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--common-black);
+  margin-bottom: 8px;
+}
+
+.main {
+  width: 1776px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 576px 726px 426px;
+
+  grid-template-areas:
+    "n b a"
+    "d b p";
+}
+.name {
+  grid-area: n;
+}
+.descript {
+  grid-area: d;
+}
+.block {
+  grid-area: b;
+}
+
+.detale {
+  font-family: var(--common-font);
+  color: var(--common-black);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.p-text {
+  font-family: var(--common-font);
+  color: var(--common-black);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.grey {
+  width: 726px;
+  height: 484px;
+  background-color: var(--grey);
+  margin-bottom: 12px;
+}
+
+.news {
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: 276px 1px 276px 1px;
+  grid-auto-flow: column;
+  gap: 12px;
+}
+.uno {
+  margin-bottom: 24px;
+}
+.x-item {
+  display: grid;
+  grid-template-columns: repeat(4, 276px);
+  /* grid-template-rows: 80px 270px; */
+
+  grid-template-areas:
+    "d d d d"
+    "f m c p";
+  gap: 24px;
+}
+.dos {
+  grid-area: d;
+}
+.forte {
+  grid-area: f;
+}
+.foot {
+  display: grid;
+  grid-template-columns: 426px 1px 276px 1px;
+  grid-auto-flow: column;
+  gap: 12px;
+}
+.bloc {
+  display: grid;
+  gap: 24px;
+}
+.new-grey {
+  width: 426px;
+  height: 284px;
+  background-color: var(--grey);
+}
+.more {
+  display: grid;
+  gap: 24px;
+}
+.more-block {
+  display: grid;
+  gap: 32px;
+}
+.tabl {
+  display: grid;
+  grid-template-columns: 276px;
+  grid-auto-flow: column;
+  gap: 24px;
+}
+.min {
+  position: relative;
+}
+.min::before {
+  border-top: 1px solid var(--common-black);
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  top: 3%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 1026px;
+}
+
+.weekly {
+  font-family: var(--common-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--common-black);
+}
+
+.wraper {
+  display: grid;
+  grid-template-columns: repeat(6, 121px);
+  grid-template-rows: repeat(6, 60px);
+}
+
+.black {
+  font-family: var(--common-font);
+  font-size: 1.3;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: var(--common-black);
+  color: #fff;
+  display: grid;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 12px;
+}
+.time {
+  font-family: var(--common-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--common-black);
+  background-color: var(--grey);
+  display: grid;
+  padding: 12px;
+
+  align-items: center;
+}
+.weather {
+  display: grid;
+  /* padding: 12px; */
+  justify-content: center;
+  align-items: center;
+}
+.spase {
+  margin-top: 24px;
+}
